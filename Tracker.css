@@ -1,0 +1,195 @@
+/* General styles */
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #e8f0fe; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-top: 30px;
+    color: #1a237e;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Form styles */
+.input-form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1100px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+    width: 23%;
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+}
+
+.form-control, .form-select {
+    width: 100%;
+    border: 1px solid #a1b2d8;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    background-color: #f9f9fc; /* Light background for input fields */
+    color: #1a237e;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #476EF7;
+    box-shadow: 0 0 5px #476EF7;
+    outline: none;
+    background-color: #e8f3fe; /* Slightly lighter blue on focus */
+}
+
+/* Add (+) Button */
+#add-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#add-button:hover {
+    background-color: #218838;
+}
+
+/* Cards styles */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1100px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-body h1 {
+    color: #0d47a1;
+}
+
+/* Table styles */
+.transaction-table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.transaction-table th {
+    background-color: #476EF7;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.transaction-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #1a237e;
+}
+
+.transaction-table tr:nth-child(even) {
+    background-color: #f1f6ff;
+}
+
+/* Edit & Delete buttons inside table */
+.edit-btn, .delete-btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: 6px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .input-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs {
+        width: 90%;
+        margin-bottom: 12px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .transaction-table {
+        font-size: 14px;
+    }
+}
+
+
+.pie-chart-container {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px;
+}
